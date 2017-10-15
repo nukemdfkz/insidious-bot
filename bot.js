@@ -170,6 +170,7 @@ bot.on("message", function (message) {
             var embed = new Discord.RichEmbed()
                 .addField("**.help**", "Shows all the available commands")
                 .addField("**.info**", "Shows some info")
+                .addField("**.yomomma**", "Tells yomomma's jokes")
                 .addField("**.8ball**", "Ask the 8ball")
                 .addField("**.music**", "Listen to your favourite songs")
                 .addField("**.profile**", "See info about you")
