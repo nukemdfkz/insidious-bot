@@ -95,7 +95,7 @@ bot.on("message", function (message) {
                         },
                         {
                             name: "Uptime",
-                            value: "My uptime is " + (Math.round(bot.uptime / (1000 * 60 * 60))) + " hours, " + (Math.round(bot.uptime / (1000 * 60)) % 60) + " minutes, and " + (Math.round(bot.uptime / 1000) % 60) + " seconds."
+                            value: My uptime is  + (Math.round(bot.uptime / (1000 * 60 * 60))) +  hours,  + (Math.round(bot.uptime / (1000 * 60)) % 60) +  minutes, and  + (Math.round(bot.uptime / 1000) % 60) +  seconds.
                         },
                         {
                             name: "Guilds List",
