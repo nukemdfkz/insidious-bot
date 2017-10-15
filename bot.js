@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 const client = new Discord.Client();
+const request = require('request');
 
 const PREFIX = ".";
 
@@ -103,6 +104,17 @@ bot.on("message", function (message) {
                         icon_url: bot.user.avatarURL,
                         text: "© Insidious Ltd."
                     }
+                }
+            });
+            break;
+        case "yomomma":
+            var request = require('request');
+            request('http://api.yomomma.info/', function (error, response, body) {
+                if (!error && response.statusCode == 200) {
+                    var yomomma = JSON.parse(body);
+                    message.channel.sendMessage(yomomma.joke);
+                } else {
+                    Logger.log("warn", "Got an error: ", error, ", status code: ", response.statusCode);
                 }
             });
             break;
