@@ -107,7 +107,7 @@ bot.on("message", function (message) {
             });
             break;
         case "uptime":
-            message.channel.send("My uptime is " + (Math.round(bot.uptime / (1000 * 60 * 60))) + " hours, " + (Math.round(bot.uptime / (1000 * 60)) % 60) + " minutes, and " + (Math.round(bot.uptime / 1000) % 60) + " seconds.");
+            message.channel.send("```My uptime is " + (Math.round(bot.uptime / (1000 * 60 * 60))) + " hours, " + (Math.round(bot.uptime / (1000 * 60)) % 60) + " minutes, and " + (Math.round(bot.uptime / 1000) % 60) + " seconds.```");
             break;
         case "invite":
             message.channel.sendMessage("https://discordapp.com/api/oauth2/authorize?client_id=319048565555200000&scope=bot&permissions=1")
