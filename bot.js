@@ -125,7 +125,11 @@ bot.on("message", function (message) {
             message.channel.sendMessage("https://discordapp.com/api/oauth2/authorize?client_id=319048565555200000&scope=bot&permissions=1")
             break;
         case "clean":
-            message.channel.bulkDelete(message.channel.messages, message.author.lastMessage);
+            if (message.author.id = "196701848239865866") {
+                message.channel.bulkDelete(message.channel.messages, message.author.lastMessage);
+            } else {
+                return;
+            }
             break;
         case "danimocanu":
             message.channel.sendMessage("There you go " + message.author.toString() + " :", {
