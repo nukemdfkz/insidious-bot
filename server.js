@@ -1,6 +1,5 @@
-const Discord = require("discord.jsconst request = require('request');");
-c
-const request = require('request');nst client = new Discord.Client();
+const Discord = require("discord.js");
+const client = new Discord.Client();
 const request = require('request');
 const http = require('http');
 const express = require('express');
@@ -291,5 +290,6 @@ hosts.forEach(function(host){
 
             //    default:
             //        message.channel.sendMessage(message.author.toString() + " ai folosit o comandă inexistentă, folosește **.help** pentru a});
-
+    }
+});
 bot.login(process.env.TOKEN);
